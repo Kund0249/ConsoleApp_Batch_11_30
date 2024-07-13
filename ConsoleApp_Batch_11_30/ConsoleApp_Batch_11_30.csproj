@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleApp_Batch_11_30.Arrays.ArrayDemo</StartupObject>
+    <StartupObject>ConsoleApp_Batch_11_30.Methods.Startup</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,11 +47,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrays\ArrayDemo.cs" />
+    <Compile Include="Arrays\JaggedArray.cs" />
+    <Compile Include="Arrays\ThreeLargestNumberFromArray.cs" />
+    <Compile Include="Arrays\TwoDArray.cs" />
     <Compile Include="ControlStatement\Iteration\DoWhileLoopDemo.cs" />
     <Compile Include="ControlStatement\Iteration\Pattern.cs" />
     <Compile Include="ControlStatement\Iteration\Program.cs" />
     <Compile Include="ControlStatement\JumpStatement\ContinueStatement.cs" />
     <Compile Include="ControlStatement\Selection\Program.cs" />
+    <Compile Include="Methods\BasicCalculator.cs" />
+    <Compile Include="Methods\Startup.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Program2.cs" />
     <Compile Include="Program3.cs" />

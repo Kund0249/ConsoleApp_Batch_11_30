@@ -36,10 +36,10 @@ namespace ConsoleApp_Batch_11_30
             //Console.WriteLine($"Name : {StudenName}, Age : {Age}, Gender : {Gender}");
 
             string V1 = "10";
-            String V2 = "20";
+            //String V2 = "20";
 
-            Int32 N1 = int.Parse(V1);       //it can not convert null value;
-            int N2 = Convert.ToInt32("10"); //it convert the null value into 0;
+            //Int32 N1 = int.Parse(V1);       //it can not convert null value;
+            //int N2 = Convert.ToInt32("10"); //it convert the null value into 0;
 
             
 
@@ -56,7 +56,7 @@ namespace ConsoleApp_Batch_11_30
             //What is the diff between small string and capital string?
 
 
-            Console.WriteLine("{0} + {1} = {2}",N1,N2,(N1+N2));
+            //Console.WriteLine("{0} + {1} = {2}",N1,N2,(N1+N2));
         }
     }
 }
