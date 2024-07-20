@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleApp_Batch_11_30.oops.Startup</StartupObject>
+    <StartupObject>ConsoleApp_Batch_11_30.oops.EncapsulationExample</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -57,6 +57,8 @@
     <Compile Include="ControlStatement\Selection\Program.cs" />
     <Compile Include="Methods\BasicCalculator.cs" />
     <Compile Include="Methods\Startup.cs" />
+    <Compile Include="oops\EncapsulationExample.cs" />
+    <Compile Include="oops\InheritanceExamle.cs" />
     <Compile Include="oops\Startup.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Program2.cs" />
