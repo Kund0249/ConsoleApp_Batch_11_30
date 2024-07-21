@@ -18,13 +18,18 @@ namespace ConsoleApp_Batch_11_30.oops
             
         }
 
-        public static Loggin GetInstance()
+        public static Loggin GetInstance
         {
-            if (logging == null) {
-                logging = new Loggin();
-            }
+            get
+            {
+                if (logging == null)
+                {
+                    logging = new Loggin();
+                }
 
-            return logging;
+                return logging;
+            }
+          
         }
         public void LogInfo()
         {
@@ -101,12 +106,14 @@ namespace ConsoleApp_Batch_11_30.oops
 
             Console.WriteLine("Total object : " + Studnet.Count);
 
-            Loggin loggin1 = Loggin.GetInstance();
+            Loggin loggin1 = Loggin.GetInstance;
             loggin1.LogingType = "Exception";
 
 
-            Loggin loggin2 = Loggin.GetInstance();
+            Loggin loggin2 = Loggin.GetInstance;
             loggin2.LogInfo();
+
+            Console.WriteLine("My Value");
         }
     }
 }

@@ -35,6 +35,23 @@ namespace ConsoleApp_Batch_11_30.oops
             get { return _Name; }
         }
 
+        public override bool Equals(object obj)
+        {
+            dynamic Emp;
+            if (obj is Employee)
+                Emp = obj;
+            else
+                return false;
+
+             
+            if(this.Name == Emp.Name)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
 
         //------------------Old One-------------------------
         //public int GetCode()

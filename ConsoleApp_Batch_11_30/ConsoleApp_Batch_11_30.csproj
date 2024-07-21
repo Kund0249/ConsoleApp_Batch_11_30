@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleApp_Batch_11_30.oops.EncapsulationExample</StartupObject>
+    <StartupObject>ConsoleApp_Batch_11_30.oops.Polymorphism_MethodOverridin</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -59,6 +59,8 @@
     <Compile Include="Methods\Startup.cs" />
     <Compile Include="oops\EncapsulationExample.cs" />
     <Compile Include="oops\InheritanceExamle.cs" />
+    <Compile Include="oops\PolyMorphism_MethodOverLoading.cs" />
+    <Compile Include="oops\Polymorphism_MethodOverridin.cs" />
     <Compile Include="oops\Startup.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Program2.cs" />
