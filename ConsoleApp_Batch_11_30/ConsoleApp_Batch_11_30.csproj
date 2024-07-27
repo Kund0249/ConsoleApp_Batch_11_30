@@ -33,9 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleApp_Batch_11_30.oops.Polymorphism_MethodOverridin</StartupObject>
+    <StartupObject>ConsoleApp_Batch_11_30.oops.Abstraction.Startup</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EmailService">
+      <HintPath>..\..\..\EmailService\EmailService\bin\Debug\EmailService.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -57,6 +60,11 @@
     <Compile Include="ControlStatement\Selection\Program.cs" />
     <Compile Include="Methods\BasicCalculator.cs" />
     <Compile Include="Methods\Startup.cs" />
+    <Compile Include="oops\Abstraction\AzEmployeeRepository.cs" />
+    <Compile Include="oops\Abstraction\Employee.cs" />
+    <Compile Include="oops\Abstraction\EmployeeRepository.cs" />
+    <Compile Include="oops\Abstraction\IEmployeeRepository.cs" />
+    <Compile Include="oops\Abstraction\Startup.cs" />
     <Compile Include="oops\EncapsulationExample.cs" />
     <Compile Include="oops\InheritanceExamle.cs" />
     <Compile Include="oops\PolyMorphism_MethodOverLoading.cs" />

@@ -27,9 +27,9 @@ namespace ConsoleApp_Batch_11_30.oops
     //   // private int _NumbersOfOrnements;
     //}
 
-    class Loan
+   abstract class Loan
     {
-        private string _AccountNumber;
+        protected string _AccountNumber;
         private string _AccounntHolder;
         private float _LoanAmount;
         private float _ROI;
@@ -40,6 +40,13 @@ namespace ConsoleApp_Batch_11_30.oops
     {
         private float _Weight;
         private int _NumbersOfOrnements;
+        static void Main(string[] args)
+        {
+            GoldLoan loan = new GoldLoan()
+            {
+
+            };
+        }
     }
 
     class HomeLoan : Loan
@@ -53,6 +60,10 @@ namespace ConsoleApp_Batch_11_30.oops
     }
     internal class InheritanceExamle
     {
-       
+        static void Main(string[] args)
+        {
+            GoldLoan gl = new GoldLoan();
+           
+        }
     }
 }
