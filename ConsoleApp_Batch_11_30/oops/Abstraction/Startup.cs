@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EmailService;
+//using EmailService;
 
 namespace ConsoleApp_Batch_11_30.oops.Abstraction
 {
-    class MyLoger : IEmailLogger
+    class MyLoger /*: IEmailLogger*/
     {
         public void Log()
         {
@@ -15,9 +15,14 @@ namespace ConsoleApp_Batch_11_30.oops.Abstraction
         }
     }
 
-    class MyEmailClient : EmailClient
+    class MyEmailClient /*: EmailClient*/
     {
-        public override void Log()
+        //public override void Log()
+        //{
+        //    Console.WriteLine("Logged");
+        //}
+
+        public  void Log()
         {
             Console.WriteLine("Logged");
         }
@@ -32,8 +37,9 @@ namespace ConsoleApp_Batch_11_30.oops.Abstraction
 
             //repository.Add(employee);
 
-            EmailClient emailClient = new MyEmailClient();
-            emailClient.SendMail();
+            /*EmailClient*/
+            MyEmailClient emailClient = new MyEmailClient();
+           // emailClient.SendMail();
         }
     }
 }

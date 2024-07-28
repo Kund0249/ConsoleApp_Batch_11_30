@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 //using Number = System.Int32;
 //using varchar = System.String;
-using EmailService;
+//using EmailService;
 
 namespace ConsoleApp_Batch_11_30
 {
@@ -14,7 +14,7 @@ namespace ConsoleApp_Batch_11_30
         static void Main(string[] args)
         {
 
-            EmailClient client;
+            //EmailClient client;
 
             //TestInternalClass testInternalClass = new TestInternalClass();
 

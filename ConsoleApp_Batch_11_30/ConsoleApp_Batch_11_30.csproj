@@ -33,12 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleApp_Batch_11_30.oops.Abstraction.Startup</StartupObject>
+    <StartupObject>ConsoleApp_Batch_11_30.ExceptionHandling.Startup</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EmailService">
-      <HintPath>..\..\..\EmailService\EmailService\bin\Debug\EmailService.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -58,6 +55,7 @@
     <Compile Include="ControlStatement\Iteration\Program.cs" />
     <Compile Include="ControlStatement\JumpStatement\ContinueStatement.cs" />
     <Compile Include="ControlStatement\Selection\Program.cs" />
+    <Compile Include="ExceptionHandling\Startup.cs" />
     <Compile Include="Methods\BasicCalculator.cs" />
     <Compile Include="Methods\Startup.cs" />
     <Compile Include="oops\Abstraction\AzEmployeeRepository.cs" />
