@@ -29,14 +29,20 @@ namespace ConsoleApp_Batch_11_30.ExceptionHandling
                 {
                     if (inputes[i-1] != inputes[i])
                     {
-                        outputs += (inputes[i] + count.ToString());
+                        outputs += (inputes[i-1] + count.ToString());
                         count = 1;
+                    }
+                    else if (i == inputes.Length - 1)
+                    {
+                        count++;
+                        outputs += inputes[inputes.Length - 1] + count.ToString();
                     }
                     else
                     {
                         count++;
                     }
                 }
+                //outputs += inputes[inputes.Length - 1] + count.ToString();
                 Console.WriteLine(outputs);
                 //Console.WriteLine("Hi"); //syntax error => Compile Time Error
 
@@ -70,6 +76,10 @@ namespace ConsoleApp_Batch_11_30.ExceptionHandling
                 //log the exception;
                 //notify the owner of application/team
                 Console.WriteLine("Currently system is not able to process this request, try after some time!");
+            }
+            finally
+            {
+                Console.WriteLine("Gurantee for execution irrespective whether exception occur or not.");
             }
         }
     }

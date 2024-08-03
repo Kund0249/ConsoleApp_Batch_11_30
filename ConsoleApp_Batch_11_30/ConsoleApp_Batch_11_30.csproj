@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleApp_Batch_11_30.ExceptionHandling.Startup</StartupObject>
+    <StartupObject>ConsoleApp_Batch_11_30.CollectionProgram.Generic.StatckExample</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,6 +50,9 @@
     <Compile Include="Arrays\JaggedArray.cs" />
     <Compile Include="Arrays\ThreeLargestNumberFromArray.cs" />
     <Compile Include="Arrays\TwoDArray.cs" />
+    <Compile Include="CollectionProgram\Generic\GenericStartup.cs" />
+    <Compile Include="CollectionProgram\Generic\StatckExample.cs" />
+    <Compile Include="CollectionProgram\startup.cs" />
     <Compile Include="ControlStatement\Iteration\DoWhileLoopDemo.cs" />
     <Compile Include="ControlStatement\Iteration\Pattern.cs" />
     <Compile Include="ControlStatement\Iteration\Program.cs" />
