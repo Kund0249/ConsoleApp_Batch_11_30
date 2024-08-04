@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleApp_Batch_11_30.CollectionProgram.Generic.StatckExample</StartupObject>
+    <StartupObject>ConsoleApp_Batch_11_30.ExtensionMethodExample.startup</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -51,6 +51,8 @@
     <Compile Include="Arrays\ThreeLargestNumberFromArray.cs" />
     <Compile Include="Arrays\TwoDArray.cs" />
     <Compile Include="CollectionProgram\Generic\GenericStartup.cs" />
+    <Compile Include="CollectionProgram\Generic\HashetExmple.cs" />
+    <Compile Include="CollectionProgram\Generic\QueueExample.cs" />
     <Compile Include="CollectionProgram\Generic\StatckExample.cs" />
     <Compile Include="CollectionProgram\startup.cs" />
     <Compile Include="ControlStatement\Iteration\DoWhileLoopDemo.cs" />
@@ -59,6 +61,8 @@
     <Compile Include="ControlStatement\JumpStatement\ContinueStatement.cs" />
     <Compile Include="ControlStatement\Selection\Program.cs" />
     <Compile Include="ExceptionHandling\Startup.cs" />
+    <Compile Include="ExtensionMethodExample\startup.cs" />
+    <Compile Include="ExtensionMethodExample\StringExtension.cs" />
     <Compile Include="Methods\BasicCalculator.cs" />
     <Compile Include="Methods\Startup.cs" />
     <Compile Include="oops\Abstraction\AzEmployeeRepository.cs" />

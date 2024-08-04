@@ -11,28 +11,30 @@ namespace ConsoleApp_Batch_11_30.Arrays
     {
         static void Main(string[] args)
         {
-            int[] Numbers = { -3,-5,-5,-1,-2,-8,-9 };
+            int[] Numbers = { -3,-5};
 
-            int First = int.MinValue;
-            int Second = int.MinValue;
-            int Third = int.MinValue;
+            int? First = null;
+            int? Second = null;
+            int? Third = null;
+
+            //Console.WriteLine("First : " + First);
+            //Console.WriteLine("Second : " + Second);
+            //Console.WriteLine("Third : " + Third);
 
             for (int i = 0; i < Numbers.Length; i++)
             {
-                if (Numbers[i] > First)
+                if (First == null || Numbers[i] > First)
                 {
                     Third = Second;
                     Second = First;
                     First = Numbers[i];
-
                 }
-                else if (Numbers[i] > Second && Numbers[i] != First)
+                else if (Second == null || Numbers[i] > Second && Numbers[i] != First)
                 {
                     Third = Second;
                     Second = Numbers[i];
-
                 }
-                else if (Numbers[i] > Third && Numbers[i] != Second)
+                else if (Third == null || Numbers[i] > Third && Numbers[i] != Second)
                 {
                     Third = Numbers[i];
                 }

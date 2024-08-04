@@ -10,7 +10,7 @@ namespace ConsoleApp_Batch_11_30.CollectionProgram.Generic
     {
         static void Main(string[] args)
         {
-            string formulla = "[{}]]";
+            string formulla = "[[[{}]]";
             bool IsBalanced = false;
 
             Stack<char> openbrackets = new Stack<char>();// {'['}
@@ -23,6 +23,12 @@ namespace ConsoleApp_Batch_11_30.CollectionProgram.Generic
                 {
                     if (c == ')' || c == '}' || c == ']')
                     {
+                        if(openbrackets.Count == 0)
+                        {
+                            IsBalanced = false;
+                            break;
+                        }
+
                         char closedbracket = c;
                         char openbracket = openbrackets.Pop();
 
